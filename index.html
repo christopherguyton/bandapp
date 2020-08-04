@@ -12,8 +12,7 @@
     <title>A Tool To Organize the Band</title>
     <meta name="description" content="Chris Locs">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -28,7 +27,7 @@
                         <span class="card-title">Add A Song</span>
                         <div class="row">
                             <form id="setlist-form">
-                            <div class="input-field cols5">
+                            <div class="input-field col s5">
                                 <input type='text' name='song' id='song' placeholder="Type Song Name And Artist">
                             </div>
                         </div>
@@ -38,12 +37,13 @@
                     </div>
                          </form>
                     </div>
+                    <!---Set List Card-->
                     <div class="card-action">
                         <h5 id='current-list'>Current Set List</h5>
                         <h6 id="set-id-1" class="center">Set #1</h6>
                         <hr>
-                        <ul class='collection'>
-                           <li class="collection-item">
+                        <ul class='collection set-1' id="set-1">
+                           <li class="collection-item" onclick="songSelected()">
                                Live Wire (AC/DC)
                            </li>
                            <li class="collection-item">
@@ -82,9 +82,9 @@
                                 Diamonds & Rust (Judas Priest)
                              </li>
                         </ul>
-                        <h6 id="set-id-1" class="center">Set #2</h6>
+                        <h6 id="set-id-2" class="center">Set #2</h6>
                         <hr>
-                        <ul class='collection'>
+                        <ul class='collection set-2' id='set-2'>
                            <li class="collection-item">
                               Smokin' In the Boys Room (Motley Crue)
                            </li>
@@ -106,10 +106,14 @@
                                Live Wire (Motley Crue)
                              </li>
                         </ul>
+                        <div class="row center">
+                            <input type="submit" value="Remove Song From Set" class='btn'>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col s6">
+                <!---Wishlist Additions-->
                 <div class="card">
                     <div class="card-content">
                         <span class="card-title">Add To Gear Wishlist</span>
@@ -128,6 +132,7 @@
                     </div>
                          </form>
                     </div>
+                    <!---Gear List Card-->
                     <div class="card-action">
                         <h5 id='current-list'>Gear List</h5>
                         <hr>
@@ -159,12 +164,13 @@
                     <input type="submit" value="Purchase Item" class='btn'>
                 </div>
             </div>
+            <!---Band Funds Card-->
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Band Funds</span>
                     <div class="row">
                         <form id="money-form">
-                        <div class="input-field col s2">
+                        <div class="input-field col s4">
                             <input type='number' name='money' id='money' placeholder="Add Funds">
                         </div>
                     </div>
