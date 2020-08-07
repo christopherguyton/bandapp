@@ -1,6 +1,13 @@
 .song-selection {
-    background-color: gray !important
+    background-color: gray !important;
 }
+
+.song-item:hover {
+  border-color: #1abc9c;
+  border-radius: 4px;
+  border-style: solid; 
+}
+
 
 body {
   background-color: gray;

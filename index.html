@@ -27,7 +27,7 @@
                         <span class="card-title">Add A Song</span>
                         <div class="row">
                             <form id="setlist-form">
-                            <div class="input-field col s5">
+                            <div class="input-field col s8">
                                 <input type='text' name='song' id='song' placeholder="Type Song Name And Artist">
                             </div>
                         </div>
@@ -43,71 +43,71 @@
                         <h6 id="set-id-1" class="center">Set #1</h6>
                         <hr>
                         <ul class='collection set-1' id="set-1">
-                           <li class="collection-item" onclick=''>
+                           <li class="collection-item song-item">
                                Live Wire (AC/DC)
                            </li>
-                           <li class="collection-item">
+                           <li class="collection-item song-item">
                             Whole Lotta Rosie (AC/DC)
-                            <li class="collection-item">
+                            <li class="collection-item song-item">
                                Sin City (AC/DC)
                             </li>
-                            <li class="collection-item">
+                            <li class="collection-item song-item">
                                Jailbreak (AC/DC)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 The Zoo (Scorpions)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Immigrant Song (Led Zeppelin)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Breaking The Chains (Dokken)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                Neon Knights (Black Sabbath)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Paranoid (Black Sabbath)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Metal Gods (Judas Priest)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Breaking The Law (Judas Priest)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Green Manalishi (Judas Priest)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                 Diamonds & Rust (Judas Priest)
                              </li>
                         </ul>
                         <h6 id="set-id-2" class="center">Set #2</h6>
                         <hr>
                         <ul class='collection set-2' id='set-2'>
-                           <li class="collection-item">
+                           <li class="collection-item song-item">
                               Smokin' In the Boys Room (Motley Crue)
                            </li>
-                           <li class="collection-item">
+                           <li class="collection-item song-item">
                             Looks That Kill (Motley Crue)
-                            <li class="collection-item">
+                            <li class="collection-item song-item">
                                Wildside (Motley Crue)
                             </li>
-                            <li class="collection-item">
+                            <li class="collection-item song-item">
                                Ain't Like That (Alice In Chains)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                Kickstart My Heart (Motley Crue)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                Saints of LA (Motley Crue)
                              </li>
-                             <li class="collection-item">
+                             <li class="collection-item song-item">
                                Live Wire (Motley Crue)
                              </li>
                         </ul>
                         <div class="row center">
-                            <input type="submit" value="Remove Song From Set" class='btn remove-song'>
+                            <input type="submit" value="Remove Song(s) From Set" class='btn remove-song'>
                         </div>
                     </div>
                 </div>
@@ -128,34 +128,33 @@
                                 </div>
                              </div>
                     <div class="row center">
-                        <input type="submit" value="Add A Gear Item" class='btn'>
-                    </div>
+                        <input type="button" value="Add A Gear Item" class='btn' onclick="addGearItem()">                    </div>
                          </form>
                     </div>
                     <!---Gear List Card-->
                     <div class="card-action">
                         <h5 id='current-list'>Gear List</h5>
                         <hr>
-                        <ul class='collection gear-list'>
+                        <ul class='collection gear-list' id='gear-ul'>
                             <table>
                     <tr class="collection-item">
                         <td>
-                           <li class="collection-item">
+                           <li class="collection-item gear-item">
                             IEM Pack 1
                            </li>
                         </td>
                         <td>
-                            <li class="collection-item item-cost">$380</li>
+                            <li class="collection-item item-cost">380</li>
                         </td>
                     </tr>
-                    <tr class="collection-item">
+                    <tr class="collection-item gear-item">
                         <td>
-                           <li class="collection-item">
+                           <li class="collection-item gear-item">
                             IEM Pack 2
                            </li>
                         </td>
                         <td>
-                            <li class="collection-item item-cost">$380</li>
+                            <li class="collection-item item-cost">380</li>
                         </td>
                     </tr>
                     </table>
@@ -208,11 +207,11 @@
                           <ul class="days">  
                             <li>1</li>
                             <li>2</li>
-                            <li><span class="active">3</span></li>
+                            <li>3</li>
                             <li>4</li>
                             <li>5</li>
                             <li>6</li>
-                            <li>7</li>
+                            <li><span class="active">7</span></li>
                             <li>8</li>
                             <li>9</li>
                             <li>10</li>
