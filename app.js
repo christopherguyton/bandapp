@@ -1,3 +1,6 @@
+
+
+
 //Selecting a Song Item
 
 const songSelects1 = document.getElementById('set-1'); // This is your UL element
@@ -45,7 +48,6 @@ newSong.className = 'collection-item song-item';
 newSong.appendChild(document.createTextNode(setInput));
 document.getElementById('set-1').appendChild(newSong);
 document.getElementById('song').value = '';
-
 }
 
 function addSet2Song(){
