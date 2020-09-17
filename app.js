@@ -1,6 +1,3 @@
-
-
-
 //Selecting a Song Item
 
 const songSelects1 = document.getElementById('set-1'); // This is your UL element
@@ -41,22 +38,24 @@ function addGearItem() {
     console.log(addGearItem);
 }
 
-function addSet1Song(){
+function addSet1Song(e){
 var setInput = document.getElementById('song').value
 const newSong = document.createElement('li');
 newSong.className = 'collection-item song-item';
 newSong.appendChild(document.createTextNode(setInput));
 document.getElementById('set-1').appendChild(newSong);
 document.getElementById('song').value = '';
+
 }
 
-function addSet2Song(){
+function addSet2Song(e){
 var setInput = document.getElementById('song').value
 const newSong2 = document.createElement('li');
 newSong2.className = 'collection-item song-item';
 newSong2.appendChild(document.createTextNode(setInput));
 document.getElementById('set-2').appendChild(newSong2);
 document.getElementById('song').value = '';
+
 }
 
 
